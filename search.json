@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "posit2023-nbdev",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "posit2023-nbdev",
+    "section": "Install",
+    "text": "Install\npip install posit2023_nbdev"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "posit2023-nbdev",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\nfrom posit2023_nbdev.card import Card\nfrom posit2023_nbdev.deck import Deck\n\n\nCard()\n\n2♣️\n\n\nYou might want to write something here\n\nDeck()\n\nA♣️; 2♣️; 3♣️; 4♣️; 5♣️; 6♣️; 7♣️; 8♣️; 9♣️; 10♣️; J♣️; Q♣️; K♣️; A♦️; 2♦️; 3♦️; 4♦️; 5♦️; 6♦️; 7♦️; 8♦️; 9♦️; 10♦️; J♦️; Q♦️; K♦️; A❤️; 2❤️; 3❤️; 4❤️; 5❤️; 6❤️; 7❤️; 8❤️; 9❤️; 10❤️; J❤️; Q❤️; K❤️; A♠️; 2♠️; 3♠️; 4♠️; 5♠️; 6♠️; 7♠️; 8♠️; 9♠️; 10♠️; J♠️; Q♠️; K♠️"
+  },
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "Card",
+    "section": "",
+    "text": "We can define a playing card like so:\n\nsource\n\nCard\n\n Card (suit=0, rank=2)\n\nInitialize self. See help(type(self)) for accurate signature.\nYou can instantiate yoru card with a suit and rank:\n\nc = Card(suit=1, rank=3)\nc\n\n3♦️\n\n\nYou can compare cards like so:\n\nc2 = Card(suit=1, rank=4)\nc2\n\n4♦️\n\n\n\nassert c2 &gt; c"
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck",
+    "section": "",
+    "text": "Let’s define a deck of cards:\n\nsource\n\nDeck\n\n Deck ()\n\nA deck of 52 cards, not including jokers\nA deck will contain all 52 cards, which can be visulalized like so:\n\ndeck = Deck()\ndeck\n\nA♣️; 2♣️; 3♣️; 4♣️; 5♣️; 6♣️; 7♣️; 8♣️; 9♣️; 10♣️; J♣️; Q♣️; K♣️; A♦️; 2♦️; 3♦️; 4♦️; 5♦️; 6♦️; 7♦️; 8♦️; 9♦️; 10♦️; J♦️; Q♦️; K♦️; A❤️; 2❤️; 3❤️; 4❤️; 5❤️; 6❤️; 7❤️; 8❤️; 9❤️; 10❤️; J❤️; Q❤️; K❤️; A♠️; 2♠️; 3♠️; 4♠️; 5♠️; 6♠️; 7♠️; 8♠️; 9♠️; 10♠️; J♠️; Q♠️; K♠️\n\n\n\nassert len(deck) == 52\n\n\nsource\n\n\nDeck.pop\n\n Deck.pop (idx:int=-1)\n\nRemove one card from the deck\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nidx\nint\n-1\nThe index of the card to remove, defaulting to the last one\n\n\n\nWe can remove one card off the deck like so:\n\ndeck.pop()\n\nK♠️\n\n\n\nassert len(deck) == 51"
+  }
+]
