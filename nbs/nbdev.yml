@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "posit2023-nbdev"
+  site-url: "https://hamelsmu.github.io/posit2023-nbdev"
+  description: "Demo for posit conf"
+  repo-branch: main
+  repo-url: "https://github.com/hamelsmu/posit2023-nbdev"
